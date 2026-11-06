@@ -1,0 +1,56 @@
+===========================================================================
+STUDENT PERFORMANCE PREDICTION SYSTEM - MODEL EVALUATION REPORT
+===========================================================================
+
+Algorithm:           Decision Tree Classifier
+Splitting Criterion: Entropy (Information Gain)
+Test Set Size:       79 students (20% stratified hold-out)
+
+---------------------------------------------------------------------------
+1. SUMMARY METRICS
+---------------------------------------------------------------------------
+Accuracy:  0.8734 (87.34%)
+Precision: 1.0000 (100.00%)
+Recall:    0.8113 (81.13%)
+F1-Score:  0.8958 (89.58%)
+
+---------------------------------------------------------------------------
+2. CONFUSION MATRIX BREAKDOWN
+---------------------------------------------------------------------------
+True Negatives  (TN - Correctly predicted Fail): 26
+False Positives (FP - Incorrectly predicted Pass): 0
+False Negatives (FN - Incorrectly predicted Fail): 10
+True Positives  (TP - Correctly predicted Pass): 43
+
+---------------------------------------------------------------------------
+3. DETAILED SKLEARN CLASSIFICATION REPORT
+---------------------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    Fail (0)       0.72      1.00      0.84        26
+    Pass (1)       1.00      0.81      0.90        53
+
+    accuracy                           0.87        79
+   macro avg       0.86      0.91      0.87        79
+weighted avg       0.91      0.87      0.88        79
+
+
+---------------------------------------------------------------------------
+4. ACADEMIC INTERPRETATION OF METRICS
+---------------------------------------------------------------------------
+• Accuracy: The overall percentage of correct predictions (both Pass and Fail)
+  out of all tested students. Formula: (TP + TN) / (TP + TN + FP + FN).
+
+• Precision: Out of all students predicted as 'Pass', what fraction actually passed?
+  High precision means very few false alarms. Formula: TP / (TP + FP).
+
+• Recall (Sensitivity): Out of all students who actually passed, what fraction did
+  the model successfully identify? Formula: TP / (TP + FN).
+
+• F1-Score: The harmonic mean of Precision and Recall. It provides a balanced
+  evaluation especially when classes are unevenly distributed.
+  Formula: 2 * (Precision * Recall) / (Precision + Recall).
+
+• Information Gain (Entropy): Measures the reduction in uncertainty/impurity
+  achieved when splitting students based on an attribute (e.g., G2 >= 10).
+===========================================================================
