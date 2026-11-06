@@ -240,6 +240,15 @@ student-performance-analysis/
 
 ## 9. Installation & Setup
 
+### ⚡ 1-Click Launch (Windows - No CLI Required)
+Simply double-click:
+- **`run_dashboard.bat`**: Automatically checks Python, installs missing dependencies, and opens the interactive dashboard at `http://localhost:8501`.
+- **`run_pipeline.bat`**: Executes the master ML pipeline, regenerating all graphs and evaluation reports.
+
+---
+
+### Manual Setup via Terminal
+
 ### Prerequisites
 - Python 3.10 or higher installed on your operating system.
 - Git (optional, for version control).
