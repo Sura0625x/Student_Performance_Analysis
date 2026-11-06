@@ -46,3 +46,4 @@ if %errorlevel% neq 0 (
     echo [ERROR] Streamlit exited with an error.
     pause
 )
+
